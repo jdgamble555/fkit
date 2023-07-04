@@ -1,0 +1,61 @@
+[debug] [2023-07-04T17:16:11.008Z] ----------------------------------------------------------------------
+[debug] [2023-07-04T17:16:11.009Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jdgam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-07-04T17:16:11.010Z] CLI Version:   12.4.2
+[debug] [2023-07-04T17:16:11.010Z] Platform:      win32
+[debug] [2023-07-04T17:16:11.010Z] Node Version:  v18.13.0
+[debug] [2023-07-04T17:16:11.011Z] Time:          Tue Jul 04 2023 12:16:11 GMT-0500 (Central Daylight Time)
+[debug] [2023-07-04T17:16:11.011Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-04T17:16:11.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-04T17:16:11.072Z] > authorizing via signed-in user (jdgamble555@gmail.com)
+[debug] [2023-07-04T17:16:11.072Z] [iam] checking project test-projects-19046 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-04T17:16:11.074Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-projects-19046:testIamPermissions [none]
+[debug] [2023-07-04T17:16:11.074Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-projects-19046:testIamPermissions x-goog-quota-user=projects/test-projects-19046
+[debug] [2023-07-04T17:16:11.075Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-projects-19046:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-04T17:16:11.238Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-projects-19046:testIamPermissions 200
+[debug] [2023-07-04T17:16:11.238Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-projects-19046:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-04T17:16:11.239Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-projects-19046 [none]
+[debug] [2023-07-04T17:16:11.452Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-projects-19046 200
+[debug] [2023-07-04T17:16:11.452Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-projects-19046 {"projectId":"test-projects-19046","projectNumber":"736849418469","displayName":"test-projects","name":"projects/test-projects-19046","resources":{"hostingSite":"test-projects-19046","storageBucket":"test-projects-19046.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_a0cea0c9-cbbc-4792-b914-67c060f787f0"}
+[debug] [2023-07-04T17:16:15.884Z] defaultcredentials: writing to file C:\Users\jdgam\AppData\Roaming\firebase\jdgamble555_gmail_com_application_default_credentials.json
+[debug] [2023-07-04T17:16:15.885Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-projects-19046/sites pageToken=&pageSize=10
+[debug] [2023-07-04T17:16:16.275Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-projects-19046/sites 200
+[debug] [2023-07-04T17:16:16.275Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-projects-19046/sites {"sites":[{"name":"projects/test-projects-19046/sites/test-projects-19046","defaultUrl":"https://test-projects-19046.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-04T17:16:16.276Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-projects-19046/sites 
+[debug] [2023-07-04T17:16:16.590Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-projects-19046/sites 200
+[debug] [2023-07-04T17:16:16.590Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-projects-19046/sites {"sites":[{"name":"projects/test-projects-19046/sites/test-projects-19046","defaultUrl":"https://test-projects-19046.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-04T17:16:16.590Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-projects-19046/webApps/-/config [none]
+[debug] [2023-07-04T17:16:17.004Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-projects-19046/webApps/-/config 200
+[debug] [2023-07-04T17:16:17.004Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-projects-19046/webApps/-/config {"projectId":"test-projects-19046","appId":"1:736849418469:web:7546f16c5e355b1c6a9c0c","storageBucket":"test-projects-19046.appspot.com","locationId":"us-central","apiKey":"AIzaSyC7Tu56_1ry-u9AnZfg_AjiMWvvNmFIPGU","authDomain":"test-projects-19046.firebaseapp.com","messagingSenderId":"736849418469","measurementId":"G-FKRCW93P0X"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-07-04T17:16:30.101Z] file:///C:/web%20projects/fkit/.svelte-kit/output/server/chunks/admin.js:4
+import { credential } from "firebase-admin";
+         ^^^^^^^^^^
+SyntaxError: Named export 'credential' not found. The requested module 'firebase-admin' is a CommonJS module, which may not support all module.exports as named exports.
+CommonJS modules can always be imported via the default export, for example using:
+
+import pkg from 'firebase-admin';
+const { credential } = pkg;
+
+    at ModuleJob._instantiate (node:internal/modules/esm/module_job:124:21)
+    at async ModuleJob.run (node:internal/modules/esm/module_job:190:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-04T17:16:30.114Z] Error: Failed with code 1
+    at Worker.<anonymous> (file:///C:/web%20projects/fkit/node_modules/@sveltejs/kit/src/utils/fork.js:64:13)
+    at Worker.emit (node:events:513:28)
+    at Worker.emit (node:domain:489:12)
+    at [kOnExit] (node:internal/worker:279:10)
+    at Worker.<computed>.onexit (node:internal/worker:199:20)
+[error] 
+[error] Error: An unexpected error has occurred.
