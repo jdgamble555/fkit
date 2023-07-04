@@ -8,7 +8,7 @@ const firebaseApp = getApps().length ? getApp() : initializeApp({
     credential: pkg.credential.cert({
         projectId: FB_PROJECT_ID,
         clientEmail: FB_CLIENT_EMAIL,
-        privateKey: JSON.parse(FB_PRIVATE_KEY)
+        privateKey: FB_PRIVATE_KEY.replace(/\\n/g, '\n')
     })
 });
 
